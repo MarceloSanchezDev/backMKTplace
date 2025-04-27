@@ -9,6 +9,7 @@ export const myLogger = (req, res, next) => {
     "Request URL": req.url,
     "Request method": req.method,
     "Request body": JSON.stringify(req.body),
+    "Request cookies": JSON.stringify(req.cookies),
   });
   next();
 };
